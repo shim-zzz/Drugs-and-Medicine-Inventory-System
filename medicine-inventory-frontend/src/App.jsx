@@ -1,10 +1,22 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Login from "./pages/Login";
+import ProtectedRoute from "./components/ProtectedRoute";
+import Navbar from "./components/Navbar";
 
 function Medicine() {
-  return <h1>Medicine Page</h1>;
+  return (
+    <>
+      <Navbar />
+
+      <main className="page-container">
+        <h1>Medicine List</h1>
+        <p>Medicine list will appear here.</p>
+      </main>
+    </>
+  );
 }
+
 
 function AddMedicine() {
   return <h1>Add Medicine Page</h1>;
