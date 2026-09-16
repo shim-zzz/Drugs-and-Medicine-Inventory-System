@@ -35,12 +35,32 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        {/* Public route */}
         <Route path="/" element={<Login />} />
-        <Route path="/medicines" element={<Medicine />} />
-        <Route path="/add-medicine" element={<AddMedicine />} />
+
+        {/* Protected Medicine route */}
+        <Route
+          path="/medicines"
+          element={
+            <ProtectedRoute>
+              <Medicine />
+            </ProtectedRoute>
+          }
+        />
+
+        {/* Protected Add Medicine route */}
+        <Route
+          path="/add-medicine"
+          element={
+            <ProtectedRoute>
+              <AddMedicine />
+            </ProtectedRoute>
+          }
+        />
       </Routes>
     </BrowserRouter>
   );
 }
+
 
 export default App;
