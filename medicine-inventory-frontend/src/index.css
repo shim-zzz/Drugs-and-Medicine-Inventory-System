@@ -131,3 +131,32 @@ button:hover {
     justify-content: center;
   }
 }
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.form-container h1 {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.field-error {
+  color: #dc2626;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.success {
+  color: #15803d;
+  background-color: #dcfce7;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
