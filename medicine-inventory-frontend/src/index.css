@@ -73,3 +73,61 @@ button:hover {
   color: #dc2626;
   margin-bottom: 15px;
 }
+
+.navbar {
+  background-color: #2563eb;
+  color: white;
+  padding: 15px 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+.navbar-links button {
+  width: auto;
+  padding: 8px 15px;
+  background-color: #dc2626;
+}
+
+.navbar-links button:hover {
+  background-color: #b91c1c;
+}
+
+.page-container {
+  padding: 30px;
+}
+
+/* Responsive Navbar */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
