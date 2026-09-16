@@ -12,9 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('medicines', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-        });
+         $table->id();
+         $table->string('name');
+         $table->string('category');
+         $table->integer('quantity');
+         $table->decimal('price', 10, 2);
+         $table->timestamps();
+     });
     }
 
     /**
