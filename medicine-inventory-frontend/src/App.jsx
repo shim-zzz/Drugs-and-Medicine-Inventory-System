@@ -1,8 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function Login() {
-  return <h1>Login Page</h1>;
-}
+import Login from "./pages/Login";
 
 function Medicine() {
   return <h1>Medicine Page</h1>;
