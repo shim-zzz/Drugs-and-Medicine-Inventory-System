@@ -19,7 +19,16 @@ function Medicine() {
 
 
 function AddMedicine() {
-  return <h1>Add Medicine Page</h1>;
+  return (
+    <>
+      <Navbar />
+
+      <main className="page-container">
+        <h1>Add Medicine</h1>
+        <p>Add medicine form will appear here.</p>
+      </main>
+    </>
+  );
 }
 
 function App() {
