@@ -6,7 +6,6 @@ function AddMedicine() {
     name: "",
     category: "",
     quantity: "",
-    price: "",
   });
 
   const [errors, setErrors] = useState({});
@@ -46,11 +45,6 @@ function AddMedicine() {
       newErrors.quantity = "Quantity cannot be negative.";
     }
 
-    if (formData.price === "") {
-      newErrors.price = "Price is required.";
-    } else if (Number(formData.price) < 0) {
-      newErrors.price = "Price cannot be negative.";
-    }
 
     return newErrors;
   };
@@ -73,7 +67,6 @@ function AddMedicine() {
       name: "",
       category: "",
       quantity: "",
-      price: "",
     });
 
     setErrors({});
@@ -142,24 +135,7 @@ function AddMedicine() {
               )}
             </div>
 
-            <div className="form-group">
-              <label htmlFor="price">Price</label>
 
-              <input
-                id="price"
-                name="price"
-                type="number"
-                min="0"
-                step="0.01"
-                value={formData.price}
-                onChange={handleChange}
-                placeholder="Enter price"
-              />
-
-              {errors.price && (
-                <p className="field-error">{errors.price}</p>
-              )}
-            </div>
 
             <button type="submit">Add Medicine</button>
           </form>
