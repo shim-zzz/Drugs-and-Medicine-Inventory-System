@@ -151,6 +151,7 @@ button:hover {
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
+  margin-bottom: 25px;
 }
 
 .add-button:hover {
